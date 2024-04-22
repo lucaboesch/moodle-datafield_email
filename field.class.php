@@ -52,7 +52,8 @@ class data_field_email extends data_field_base {
         global $OUTPUT;
 
         // Show the custom icon on a email field in the fields list.
-        return $OUTPUT->pix_icon('email', 'email', 'datafield_email');
+        return "<i class=\"icon fa fa-envelope fa-fw\" title=\"" . $this->type .
+            "\" role=\"img\" aria-label=\"" . $this->type . "\"></i>";
     }
 
     /**
